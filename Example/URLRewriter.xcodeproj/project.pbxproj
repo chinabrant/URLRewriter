@@ -28,11 +28,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		19E8C432ABFC17E79DDD831A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		1AA0263DF121294FECC5FA3B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		19E8C432ABFC17E79DDD831A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1AA0263DF121294FECC5FA3B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		21068196E7A880F6F9611D3C /* Pods-URLRewriter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URLRewriter_Example.release.xcconfig"; path = "Target Support Files/Pods-URLRewriter_Example/Pods-URLRewriter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		25FE52E31C66ED65BE4B0591 /* Pods-URLRewriter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URLRewriter_Tests.debug.xcconfig"; path = "Target Support Files/Pods-URLRewriter_Tests/Pods-URLRewriter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		28D153AD2C49D913320DA99A /* URLRewriter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = URLRewriter.podspec; path = ../URLRewriter.podspec; sourceTree = "<group>"; };
+		28D153AD2C49D913320DA99A /* URLRewriter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = URLRewriter.podspec; path = ../URLRewriter.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* URLRewriter_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URLRewriter_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,7 +77,6 @@
 				25FE52E31C66ED65BE4B0591 /* Pods-URLRewriter_Tests.debug.xcconfig */,
 				900DF6BF09E973E10FC5BFAF /* Pods-URLRewriter_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

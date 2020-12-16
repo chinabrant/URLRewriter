@@ -1,0 +1,6 @@
+framework module URLRewriter {
+  umbrella header "URLRewriter-umbrella.h"
+
+  export *
+  module * { export * }
+}
