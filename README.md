@@ -5,9 +5,21 @@
 [![License](https://img.shields.io/cocoapods/l/URLRewriter.svg?style=flat)](https://cocoapods.org/pods/URLRewriter)
 [![Platform](https://img.shields.io/cocoapods/p/URLRewriter.svg?style=flat)](https://cocoapods.org/pods/URLRewriter)
 
-## Example
+## Introduce
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+通过正则表达式规则，将任意字符串改写。
+```
+pattern:
+^(?:https?:)\\/\\/test.(com|test)\\/product\\/([0-9]*).html$
+
+target:
+myappScheme://host.mobile/goodsDetail?goodsId=$2
+
+input:
+http://test.com/product/2345.html
+```
+
+如上，可以将input通过动态配置的pattern改写成target.
 
 ## Requirements
 
