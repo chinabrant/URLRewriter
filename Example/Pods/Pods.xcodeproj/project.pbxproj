@@ -108,7 +108,7 @@
 		CD6B1F146B0E157FE5B9CAFFAE77A5B5 /* Nimble-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B95D4706E6510E2870F2176D49F24BDA /* Nimble-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE7A96A1258A002100074F33 /* RewriteRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7A96A0258A002100074F33 /* RewriteRule.swift */; };
 		CE7A96AD258A017100074F33 /* URLRewriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7A96AC258A017100074F33 /* URLRewriter.swift */; };
-		CE7A96B4258A07DA00074F33 /* FlagHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7A96B3258A07DA00074F33 /* FlagHandler.swift */; };
+		CE7A96BB258A1B9600074F33 /* FlagHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7A96BA258A1B9600074F33 /* FlagHandler.swift */; };
 		CEE8D31A4E76BB7B350BF2A7175D4BC2 /* NMBExceptionCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E16292DE512FF00FB3EB67A3647BCE /* NMBExceptionCapture.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		CF9218FF56D8EE43681150A3E1635C9A /* ToSucceed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E202073905CD8DFFF6CF21247D1D7C12 /* ToSucceed.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		D2C041844A0EB4EB2E8C7B9DAA748EEB /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29464526915A7F01A5F16D211105A01E /* Example.swift */; };
@@ -281,7 +281,7 @@
 		CD7E0CEA6B3ABE8817D8CA2FD7331CE1 /* CwlMachBadInstructionHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CwlMachBadInstructionHandler.m; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/CwlMachBadInstructionHandler.m; sourceTree = "<group>"; };
 		CE7A96A0258A002100074F33 /* RewriteRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RewriteRule.swift; path = URLRewriter/Classes/RewriteRule.swift; sourceTree = "<group>"; };
 		CE7A96AC258A017100074F33 /* URLRewriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = URLRewriter.swift; path = URLRewriter/Classes/URLRewriter.swift; sourceTree = "<group>"; };
-		CE7A96B3258A07DA00074F33 /* FlagHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagHandler.swift; sourceTree = "<group>"; };
+		CE7A96BA258A1B9600074F33 /* FlagHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlagHandler.swift; path = URLRewriter/Classes/FlagHandler.swift; sourceTree = "<group>"; };
 		D0AC8F7F1FE6F6E08F0EC5F451E062B1 /* ExpectationMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpectationMessage.swift; path = Sources/Nimble/ExpectationMessage.swift; sourceTree = "<group>"; };
 		D3632C388A7C67235660658982B4FB98 /* QuickConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickConfiguration.m; path = Sources/QuickObjectiveC/Configuration/QuickConfiguration.m; sourceTree = "<group>"; };
 		D5E6ECB0636970F373A68D06DE828E5E /* XCTestObservationCenter+Register.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XCTestObservationCenter+Register.m"; path = "Sources/NimbleObjectiveC/XCTestObservationCenter+Register.m"; sourceTree = "<group>"; };
@@ -407,7 +407,7 @@
 				630F6662C3E32264DAB084615ADBFD11 /* Pod */,
 				AD30E4E99FA23D67D830E3D22AEA76B7 /* Support Files */,
 				CE7A96A0258A002100074F33 /* RewriteRule.swift */,
-				CE7A96B3258A07DA00074F33 /* FlagHandler.swift */,
+				CE7A96BA258A1B9600074F33 /* FlagHandler.swift */,
 				CE7A96AC258A017100074F33 /* URLRewriter.swift */,
 			);
 			name = URLRewriter;
@@ -929,7 +929,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE7A96B4258A07DA00074F33 /* FlagHandler.swift in Sources */,
+				CE7A96BB258A1B9600074F33 /* FlagHandler.swift in Sources */,
 				CE7A96AD258A017100074F33 /* URLRewriter.swift in Sources */,
 				CE7A96A1258A002100074F33 /* RewriteRule.swift in Sources */,
 				C92F82090F5378C1944FF1E4D8E751B4 /* URLRewriter-dummy.m in Sources */,
