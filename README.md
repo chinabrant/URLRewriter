@@ -21,6 +21,12 @@ http://test.com/product/2345.html
 
 如上，可以将input通过动态配置的pattern改写成target.
 
+## Example
+```
+let rule = RewriteRule(pattern: "^(?:https?:)\\/\\/test.(com|test)\\/product\\/([0-9]*).html$", target: "myappScheme://host.mobile/goodsDetail?goodsId=$2")
+URLRewriter.instance
+```
+
 ## Requirements
 
 ## Installation

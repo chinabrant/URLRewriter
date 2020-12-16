@@ -1,7 +1,7 @@
 PODS:
   - Nimble (8.0.9)
   - Quick (2.2.1)
-  - URLRewriter (0.1.0)
+  - URLRewriter (1.0.0)
 
 DEPENDENCIES:
   - Nimble (~> 8.0.7)
@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Nimble: 98b888285a615fd34f20e61753cf58ea1402bde4
   Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
-  URLRewriter: b7ad6a50d4e709cce322cf2178cb78faa1d8d257
+  URLRewriter: 11064c09c3f746787158533c28bdd9dcf34bf3b1
 
 PODFILE CHECKSUM: 811575d4615be1bb072b1a255ce977febdc41791
 
