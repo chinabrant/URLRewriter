@@ -14,7 +14,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		E99D35FB66FC1F31B6DC6357 /* Pods_URLRewriter_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E866E25864B04522284A6725 /* Pods_URLRewriter_Example.framework */; };
+		CE7A9704258AE88F00074F33 /* Pods_URLRewriter_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E866E25864B04522284A6725 /* Pods_URLRewriter_Example.framework */; };
+		CE7A9705258AE88F00074F33 /* Pods_URLRewriter_Example.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E866E25864B04522284A6725 /* Pods_URLRewriter_Example.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +27,20 @@
 			remoteInfo = URLRewriter;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE7A9706258AE88F00074F33 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE7A9705258AE88F00074F33 /* Pods_URLRewriter_Example.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		19E8C432ABFC17E79DDD831A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -46,6 +61,7 @@
 		69D1BA144025176503E6893A /* Pods_URLRewriter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URLRewriter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		900DF6BF09E973E10FC5BFAF /* Pods-URLRewriter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URLRewriter_Tests.release.xcconfig"; path = "Target Support Files/Pods-URLRewriter_Tests/Pods-URLRewriter_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9DE3A8A14485C2466AE8A7AA /* Pods-URLRewriter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URLRewriter_Example.debug.xcconfig"; path = "Target Support Files/Pods-URLRewriter_Example/Pods-URLRewriter_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		CE7A96FD258AE82600074F33 /* URLRewriter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = URLRewriter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E866E25864B04522284A6725 /* Pods_URLRewriter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URLRewriter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -54,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E99D35FB66FC1F31B6DC6357 /* Pods_URLRewriter_Example.framework in Frameworks */,
+				CE7A9704258AE88F00074F33 /* Pods_URLRewriter_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +169,7 @@
 		656D53A6675E3412EA317489 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE7A96FD258AE82600074F33 /* URLRewriter.framework */,
 				E866E25864B04522284A6725 /* Pods_URLRewriter_Example.framework */,
 				69D1BA144025176503E6893A /* Pods_URLRewriter_Tests.framework */,
 			);
@@ -171,6 +188,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				9D4DCD6BD88B79700117F974 /* [CP] Embed Pods Frameworks */,
+				CE7A9706258AE88F00074F33 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

@@ -8,8 +8,8 @@
 import Foundation
 
 /// URL重写
-public class URLRewriter {
-    public static let instance: URLRewriter = URLRewriter()
+class URLRewriter {
+    static let instance: URLRewriter = URLRewriter()
     private init() {
         
     }
@@ -27,7 +27,7 @@ public class URLRewriter {
     /// - Parameters:
     ///   - flag: flag
     ///   - handler: 对应的handler，要实现FlagHandler协议
-    public func register(flag: String, handler: FlagHandler) {
+    func register(flag: String, handler: FlagHandler) {
         if flag.count == 0 {
             return
         }
@@ -37,7 +37,7 @@ public class URLRewriter {
     
     /// 更新规则
     /// - Parameter rules: 新的规则
-    public func updateRules(rules: [RewriteRule]) {
+    func updateRules(rules: [RewriteRule]) {
         _rules = rules
     }
     
@@ -46,7 +46,7 @@ public class URLRewriter {
     ///   - url: 要匹配的url
     ///   - pattern: 正则表达式
     /// - Returns: 匹配结果
-    private func match(url: String, pattern: String) -> [String] {
+    func match(url: String, pattern: String) -> [String] {
         do {
             let regex = try NSRegularExpression(pattern: pattern, options: NSRegularExpression.Options.caseInsensitive)
             let matches = regex.matches(in: url, options: NSRegularExpression.MatchingOptions.reportProgress, range: NSMakeRange(0, url.count))
@@ -73,7 +73,7 @@ public class URLRewriter {
     ///   - parameters: 匹配结果参数
     ///   - url: 匹配的url
     /// - Returns: 改写后的url
-    private func targetUrl(rule: RewriteRule, parameters: [String], url: String) -> String {
+    func targetUrl(rule: RewriteRule, parameters: [String], url: String) -> String {
         if let flag = rule.flag, flag.count > 0, let handler = _flagHandlers[flag] {
             return handler.handle(url: url, rule: rule, params: parameters)
         }
@@ -89,7 +89,7 @@ public class URLRewriter {
     /// 对指定url进行重写
     /// - Parameter url: 要重写的url
     /// - Returns: 重写后的url, 没有匹配到规则就返回原url
-    public func rewriteUrl(url: String) -> String {
+    func rewriteUrl(url: String) -> String {
         for rule in rules {
             let result = match(url: url, pattern: rule.pattern)
             if result.count > 0 {

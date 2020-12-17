@@ -8,7 +8,7 @@
 import Foundation
 
 /// 特殊的flag处理
-public protocol FlagHandler {
+protocol FlagHandler {
     
     /// url 匹配到规则后，如果规则里面的flag不为空，则调用对应的FlagHandler来处理
     /// - Parameters:

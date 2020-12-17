@@ -8,7 +8,7 @@
 import Foundation
 
 /// 重写规则
-public struct RewriteRule {
+struct RewriteRule {
     /// 匹配原始字符串的正则表达式
     let pattern: String
     
@@ -19,7 +19,7 @@ public struct RewriteRule {
     /// 额外的规则处理
     let flag: String?
     
-    public init(pattern: String, target: String, flag: String?) {
+    init(pattern: String, target: String, flag: String?) {
         self.pattern = pattern
         self.target = target
         self.flag = flag

@@ -14,7 +14,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let rule = RewriteRule(pattern: "^(?:https?:)\\/\\/test.(com|test)\\/product\\/([0-9]*).html$", target: "myappScheme://host.mobile/goodsDetail?goodsId=$2")
+        let rule = RewriteRule(pattern: "^(?:https?:)\\/\\/test.(com|test)\\/product\\/([0-9]*).html$", target: "myappScheme://host.mobile/goodsDetail?goodsId=$2", flag: nil)
+        URLRewriter.instance.updateRules(rules: [rule])
+        
+        let result = URLRewriter.instance.rewriteUrl(url: "http://test.com/product/2345.html")
+        
+        print("rewrite result: \(result)")
         
     }
 
